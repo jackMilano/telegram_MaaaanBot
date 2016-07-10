@@ -24,7 +24,6 @@ def handle(msg):
                 prev_word = ""
                 for word in world_list:
                     result = regexWordObj.match(word)
-                    maan_bot_response = "ERROR"
                     # Somebody wrote the word of interest
                     if result is not None:
                         maan_bot_response = compute_response(word)
