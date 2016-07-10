@@ -1,8 +1,8 @@
-import random  #
-import re  # REGular EXpression
-from time import sleep
-import telepot  # Python framework for Telegram Bot API
+from random import randint
 from sys import argv
+from time import sleep
+import re                   # REGular EXpression
+import telepot              # Python framework for Telegram Bot API
 
 
 # If in a chat conversation somebody says the word 'man' with one or more 'a' the bot must answer with a 'man'
@@ -90,7 +90,7 @@ def compute_response(word):
         tmp = a_num_min
         a_num_min = a_num_max
         a_num_max = tmp
-    a_num_random = random.randint(a_num_min, a_num_max)
+    a_num_random = randint(a_num_min, a_num_max)
     for x in range(0, a_num_random):
         maan_bot_response += 'a'
     maan_bot_response += 'n'
